@@ -11,8 +11,8 @@ export class WeatherService {
 
   async getWeather(city: string): Promise<any> {
     const apiKey = this.configService.get<string>('WEATHER_API_KEY');
-    console.log(process.env); // To log all environment variables
-    console.log(this.configService.get('WEATHER_API_KEY')); // To log the specific variable
+    //console.log(process.env); // To log all environment variables
+    //console.log(this.configService.get('WEATHER_API_KEY')); // To log the specific variable
 
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(
       city,

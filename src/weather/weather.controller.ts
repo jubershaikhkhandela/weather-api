@@ -29,7 +29,7 @@ export class WeatherController {
       return weatherData;
     } catch (error) {
       // In a real-world app, you'd want to do better error handling
-      console.log(error.message);
+      //console.log(error.message);
       throw new HttpException(
         'Failed to get weather data',
         HttpStatus.INTERNAL_SERVER_ERROR,
